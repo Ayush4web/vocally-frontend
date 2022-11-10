@@ -1,0 +1,44 @@
+.service-section {
+  width: 100vw;
+  height: 80vh;
+  background-color: #171b26;
+  display: flex;
+}
+
+.mobile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+
+.service-text > * {
+  margin-bottom: 30px;
+}
+
+.service {
+  width: 60%;
+}
+
+@media screen and (max-width: 425px) {
+  .service-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .service-section > * {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+  }
+}

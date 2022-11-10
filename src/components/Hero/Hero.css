@@ -1,0 +1,162 @@
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 87vh;
+  display: flex;
+}
+
+.content {
+  width: 40%;
+  height: 100%;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content > * {
+  margin-bottom: 30px;
+}
+
+.headline {
+  font-size: 40px;
+  line-height: 50px;
+  color: #dedede;
+}
+
+p {
+  color: #a5a8aa;
+  font-size: 14px;
+}
+
+.form > input {
+  margin-bottom: 20px;
+  border-radius: 30px;
+  width: 275px;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #5f616887;
+  color: #a5a8aa;
+  background-color: transparent;
+  font-size: 13px;
+  outline: none;
+}
+
+.submit-btn {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  width: 275px;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #5f616887;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #02a425;
+  font-size: 13px;
+}
+
+.submit-btn:hover {
+  background-color: #7e0fe1;
+  transition-duration: 400ms;
+  color: white;
+}
+
+.illustration {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration-image {
+  width: 90%;
+  height: 90%;
+  background: url("../../assets/Pickup_Illustration.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+hr {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  border: 1px solid #1a1f2c;
+}
+
+.go-down {
+  width: 3%;
+  position: absolute;
+  bottom: 20px;
+  right: 48.5%;
+  cursor: pointer;
+}
+
+.go-down:hover {
+  transform: rotate(180deg);
+  animation: blink;
+  animation-duration: 200ms;
+  animation-timing-function: ease-in-out;
+}
+
+.socials {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.error {
+  color: #ff5454;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 425px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .content {
+    width: 90%;
+    margin-top: 40px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .headline {
+    font-size: 30px;
+  }
+
+  .go-down {
+    display: none;
+  }
+
+  .socials {
+    bottom: 10px;
+    right: calc((100% - 161px) / 2);
+  }
+}
